@@ -11,9 +11,9 @@ setup(
 
     keywords=['django', 'server', 'runserver', 'browser-sync', 'gulp'],
 
-    author='Iron County School District,
-    author_email='tech@ironmail.org,
-    url='https://irondistrict.org,
+    author='Iron County School District',
+    author_email='tech@ironmail.org',
+    url='https://irondistrict.org',
 
     packages=find_packages(),
 

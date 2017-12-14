@@ -1,23 +1,33 @@
 """Setup scrip of django-broswersync"""
-import browser_sync
-
 from setuptools import setup
 from setuptools import find_packages
 
 setup(
     name='django-browsersync',
-    version=browser_sync.__version__,
+    version='0.0.1',
 
-    description='browser-sync with gulp and the Django development server',
+    description='browser-sync with gulpfile support and the Django development server',
     long_description=open('README.rst').read(),
 
-    keywords='django, server, runserver, browser-sync, gulp',
+    keywords=['django', 'server', 'runserver', 'browser-sync', 'gulp'],
 
-    author=browser_sync.__author__,
-    author_email=browser_sync.__email__,
-    url=browser_sync.__url__,
+    author='Iron County School District,
+    author_email='tech@ironmail.org,
+    url='https://irondistrict.org,
 
     packages=find_packages(),
+
+    install_requires=[
+        'ansicolors==1.1.8',
+        'env-tools==2.1.0',
+        'futures==3.1.1',
+        'psutil==5.2.2',
+    ],
+    
+    setup_requires=[
+        'setuptools-markdown'
+    ],
+
     classifiers=[
         'Framework :: Django',
         'Environment :: Web Environment',
@@ -25,9 +35,8 @@ setup(
         'Programming Language :: Python :: 3',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Topic :: Software Development :: Libraries :: Python Modules'],
 
-    license=browser_sync.__license__,
     include_package_data=True,
 )
